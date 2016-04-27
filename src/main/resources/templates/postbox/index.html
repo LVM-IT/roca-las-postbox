@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org" th:include="layout :: page">
+
+<body>
+<div th:fragment="content">
+
+	<header class="page-header">
+		<h1>Postkorb</h1>
+	</header>
+
+	<div class="row">
+		<div class="col-md-12">
+			<div class="listing-header">
+				<h2>Willkommen</h2>
+			</div>
+
+			<ul>
+				<li>
+					<a href="#" th:href="${#mvc.url('MC#index').build()}">Postkorb m50000</a>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+
+</div>
+
+</body>
+</html>

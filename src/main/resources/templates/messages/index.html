@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org" th:include="layout :: page">
+
+<body>
+<div th:fragment="content">
+
+	<header class="page-header">
+		<h1>Postkorb</h1>
+	</header>
+
+	<div class="row">
+		<div class="col-md-12">
+			<div class="listing-header">
+				<h2>Nachrichten</h2>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-responsive active">
+						<table class="messages-overview table table-striped">
+							<thead>
+							<tr>
+								<th class="sort" data-sort="col-message-entryId">#</th>
+								<th class="sort" data-sort="col-message-date">Datum</th>
+								<th class="sort" data-sort="col-message-text">Text</th>
+								<th class="sort" data-sort="col-message-reference-text">Bezug</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr th:each="message : ${messages}">
+								<td class="col-message-entryId" th:text="${message.entryId}">1234</td>
+								<td class="col-message-date" th:text="${message.date}">16.03.2015</td>
+								<td class="col-message-text" th:text="${message.text}">Wiedervorlage</td>
+								<td class="col-message-reference">
+									<a href="#"
+									   th:unless="${#strings.isEmpty(message.referenceUri) or #strings.isEmpty(message.reference)}"
+									   th:href="@{${message.referenceUri}}" th:text="${message.referenceId}">
+										<a href="http://localhost:8080/vertrag/987654321">Vers 987654321</a>
+									</a>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+</div>
+</body>
+</html>

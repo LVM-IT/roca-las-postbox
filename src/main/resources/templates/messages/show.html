@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org" th:include="layout :: page">
+
+<body>
+<div th:fragment="content">
+
+	<header class="page-header">
+		<h1>Postkorb</h1>
+	</header>
+
+	<div class="row">
+		<div class="col-md-12">
+			<!--<div class="listing-header">-->
+				<!--<h2>Nachricht <span th:text="${message.entryId}">1234</span> <small>vom <span th-text="${message.date}">21.02.2016</span></small></h2>-->
+			<!--</div>-->
+
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-default">
+
+						<div class="panel-heading">
+							<h3 class="panel-title">Nachricht <span th:text="${message.entryId}">1234</span> <small>vom <span th-text="${message.date}">21.02.2016</span></small></h3>
+						</div>
+
+						<div class="panel-body">
+
+							<dl class="dl-horizontal">
+								<dt>EntryUri</dt>
+								<dd th:text="${message.entryUri}">Entry-Uri</dd>
+								<dt>Text</dt>
+								<dd th:text="${message.text}">lorem ipsum dolom</dd>
+								<dt>Bezug</dt>
+								<dd th:text="${message.reference}">bezug</dd>
+								<dt>BezugsId</dt>
+								<dd th:text="${message.referenceId}">bezugsId</dd>
+								<dt>BezugsUri</dt>
+								<dd th:text="${message.referenceUri}">bezugsUri</dd>
+							</dl>
+						</div>
+					</div>
+
+					<a href="#" class="btn btn-primary" th:href="${#mvc.url('MC#index').build()}">Nachrichtenübersicht</a>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+</div>
+</body>
+</html>

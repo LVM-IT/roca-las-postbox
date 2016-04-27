@@ -1,0 +1,22 @@
+# Maven
+target/
+
+# OSX
+.DS_Store
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# IntelliJ
+*.iml
+.idea/
+/out/
+/node_modules
+/.eslintcache
+
+/src/main/resources/static
+*.log
+
+.vagrant
