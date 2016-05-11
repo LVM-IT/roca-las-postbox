@@ -23,12 +23,12 @@ This repository was created as part of the evaluation project "single page appli
 
 ## Deutsche Version
 
-## Vorraussetzungen
+### Vorraussetzungen
 ```
 Java 8
 Maven
 ```
-## Anwendung starten
+### Anwendung starten
 
 ```
 npm install
