@@ -1,7 +1,11 @@
 # RoCA LAS Postbox
 
 ## Prerequisites
-You need to have Java 8 and Maven installed.
+
+```
+Java 8 
+Maven
+```
 
 ## Run with:
 
@@ -20,9 +24,10 @@ This repository was created as part of the evaluation project "single page appli
 ## Deutsche Version
 
 ## Vorraussetzungen
+```
 Java 8
 Maven
-
+```
 ## Anwendung starten
 
 ```
