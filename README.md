@@ -5,6 +5,7 @@
 ```
 Java 8 
 Maven
+node.js >= 4.0
 ```
 
 ## Run with:
