@@ -1,4 +1,5 @@
 {
+  "license": "MIT",
   "scripts": {
     "postinstall": "npm run compile",
     "backend": "node --use-strict node_modules/lasrest",
